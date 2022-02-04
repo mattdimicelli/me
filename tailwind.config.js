@@ -7,7 +7,8 @@ module.exports = {
       colors: {
         brownish: '#bd5d38',
         salmonish: 'rgba(255,255,255,.5)',
-        'brighter-salmon': 'rgba(255,255,255,.75)'
+        'brighter-salmon': 'rgba(255,255,255,.75)',
+        browner: '#824027;'
       },
       borderWidth: {
         '1': '1px'

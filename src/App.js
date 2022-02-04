@@ -6,7 +6,7 @@ import Content from './components/Content';
 
 const App = () => {
   return (
-    <div className="relative min-h-screen md:flex">
+    <div className="relative min-h-screen">
       <MobileMenu />
       <ResponsiveSidebar />
       <Content />

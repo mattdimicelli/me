@@ -3,8 +3,8 @@ import { IconContext } from 'react-icons';
 
 const MobileMenu = props => {
     return (
-        <div className="bg-brownish h-14 py-2 text-salmonish flex 
-        justify-end md:hidden">
+        <div className="bg-brownish h-14 py-2 w-full text-salmonish flex 
+        justify-end fixed lg:hidden">
             <IconContext.Provider value={{ size: "2rem" }}>
                 <button className="focus:border-dotted mr-4 px-2 border-1 rounded border-salmonish"><GiHamburgerMenu /></button>
             </IconContext.Provider>

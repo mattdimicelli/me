@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { FaGithub, FaLinkedinIn, FaReact, FaGit, FaNode,
      FaLinux, FaNpm } from 'react-icons/fa';
 import { TiHtml5 } from 'react-icons/ti';
@@ -6,18 +7,37 @@ import { SiCsswizardry, SiVisualstudiocode, SiFirebase, SiTailwindcss,
 import { DiHeroku } from 'react-icons/di';
 import { GiCheckMark } from 'react-icons/gi';
 import { IconContext } from 'react-icons';
+import { RiEnglishInput } from 'react-icons/ri';
 import libraryScreenshot from '../images/library_screenshot.png';
+import battleshipScreenshot from '../images/battleship_screenshot.png';
+import memoryScreenshot from '../images/memory_screenshot.png';
+import calculatorScreenshot from '../images/calculator_screenshot.png';
+import shrimpsScreenshot from '../images/shrimps_screenshot.png';
+import todoScreenshot from '../images/todo_screenshot.png';
+import spanishIconSlate from '../images/spanish-icon.png';
+import spanishIconBrownish from '../images/spanish-icon-brownish.png';
 import Project from './Project';
+import School from './School';
 
 
 const Content = props => {
+    let [spanishIconSrc, setSpanishIconSrc] = useState(spanishIconSlate);
+
+    function onMouseOverSpanish() {
+        setSpanishIconSrc(spanishIconBrownish);
+    }
+
+    function onMouseLeaveSpanish() {
+        setSpanishIconSrc(spanishIconSlate);
+    }
+
     return (
-        <div className="flex-1 font-sans">
+        <div className="flex-1 font-sans lg:relative lg:left-64 lg:rest-of-screen">
             <IconContext.Provider value={{ size: '2rem', color: 'white'}}>
-                <article className="about py-16 px-4 min-h-screen
+                <article id="about" className="pt-28 pb-16 px-4 min-h-screen
                 border-b-1 border-slate-500">
                     <section className="uppercase">
-                        <h1 className="text-5xl font-bold ">
+                        <h1 className="text-5xl font-bold sm:text-7xl">
                             <span className="text-slate-800">Matthew </span>
                             <span className="whitespace-nowrap text-brownish">
                                 Di Micelli
@@ -27,9 +47,10 @@ const Content = props => {
                             <span className="text-slate-500">
                                 40 Woodbury Way · Syosset, NY 11791-2718 · (516) 382-2699 · 
                             </span>
-                            <span className="text-brownish">
+                            <a href="mailto:matthewdimicelli@gmail.com" 
+                            className="text-brownish hover:text-browner hover:underline">
                                 matthewdimicelli@gmail.com
-                                </span>
+                            </a>
                         </address>
                     </section>
                     <section className="text-slate-500 mt-12">
@@ -53,27 +74,36 @@ const Content = props => {
                 </article>
             </IconContext.Provider>
 
-            <section className="skills py-16 px-4 min-h-screen border-b-1 
+            <section id="skills" className="py-16 px-4 min-h-screen border-b-1 
                 border-slate-500">
-                <IconContext.Provider value={{ size: '2.5rem', color: '#64748B'}}>
-                    <h2 className="uppercase text-5xl font-bold">Skills</h2>
+                <IconContext.Provider value={{ className: 'skill-icon' }}>
+                    <h2 className="uppercase text-5xl font-bold text-slate-800">
+                        Skills
+                    </h2>
                     <h3 className="mt-12 uppercase text-slate-500 font-bold">
                         Languages & Tools
                     </h3>
                     <ul className='gap-x-5 gap-y-8 flex flex-wrap mt-8'>
-                        <li><TiHtml5 /></li>
-                        <li><SiCsswizardry /></li>
-                        <li><SiJavascript /></li>
-                        <li><SiVisualstudiocode /></li>
-                        <li><FaReact /></li>
-                        <li><SiFirebase /></li>
-                        <li><FaGit /></li>
-                        <li><FaGithub /></li>
-                        <li><DiHeroku /></li>
-                        <li><FaNode /></li>
-                        <li><FaLinux /></li>
-                        <li><SiTailwindcss /></li>
-                        <li><FaNpm /></li>
+                        <li aria-label='HTML'><TiHtml5 /></li>
+                        <li aria-label='CSS'><SiCsswizardry /></li>
+                        <li aria-label='JS'><SiJavascript /></li>
+                        <li aria-label='VS Code'><SiVisualstudiocode /></li>
+                        <li aria-label='React'><FaReact /></li>
+                        <li aria-label='Firebase'><SiFirebase /></li>
+                        <li aria-label='Git'><FaGit /></li>
+                        <li aria-label='Github'><FaGithub /></li>
+                        <li aria-label='Heroku'><DiHeroku /></li>
+                        <li aria-label='Node'><FaNode /></li>
+                        <li aria-label='Linux'><FaLinux /></li>
+                        <li aria-label='Tailwind CSS'><SiTailwindcss /></li>
+                        <li aria-label='npm'><FaNpm /></li>
+                        <li aria-label='English'><RiEnglishInput /></li>
+                        <li onMouseOver={onMouseOverSpanish} 
+                            onMouseLeave={onMouseLeaveSpanish}>
+                            <img src={spanishIconSrc} alt="Spanish" 
+                            className="w-10 h-10"                              
+                            />
+                        </li>
                     </ul>
                 </IconContext.Provider>
                 <h2 className="mt-8 uppercase text-slate-500 font-bold">
@@ -81,7 +111,7 @@ const Content = props => {
                 </h2>
                 <IconContext.Provider value={{ size: '1rem', color: '#64748B'}}>
                     <ul className="text-slate-500">
-                        <li><GiCheckMark className="inline-block mr-2" />Mobile-First, Responsive Design</li>
+                        <li className="mt-5"><GiCheckMark className="inline-block mr-2" />Mobile-First, Responsive Design</li>
                         <li>
                             <GiCheckMark className="inline-block mr-2" />
                             Testing (Static, Unit, Integration, e2e, & TDD)
@@ -89,8 +119,8 @@ const Content = props => {
                     </ul>
                 </IconContext.Provider>
             </section>
-            <section className="py-16 px-4 min-h-screen border-b-1 
-                border-slate-500">
+            <section id="projects" className="py-16 px-4 min-h-screen border-b-1 
+                border-slate-500 text-slate-800">
                 <h2 className="uppercase text-5xl font-bold">Sample Projects</h2>
                 <ul>
                     <Project title='No-Framework Book Library Using BaaS'
@@ -109,9 +139,103 @@ const Content = props => {
                         database and Authentication."
                     img={libraryScreenshot}
                     imgAlt='screenshot of library app'
+                    url='https://github.com/mattdimicelli/No_Framework_Book_Library_Using_BaaS'
+                    />
+
+                    <Project title='No-Framework Battleship Via TDD'
+                    description="The classic Battleship game, built via Test 
+                    Driven Development (TDD). Specifically, the game's logic was
+                    written separate from the DOM controller, and it was the 
+                    former which was written with TDD."
+                    img={battleshipScreenshot}
+                    imgAlt='screenshot of battleship app'
+                    url='https://github.com/mattdimicelli/No_Framework_Battleship_Via_TDD'
+                    />
+
+                    <Project title='React Memory Card Game'
+                    description="This game puts your memory to the test! You are
+                    presented with cards, each with a random country's flag and 
+                    the name of the country. The cards get shuffled any time one
+                    of them is clicked. If you click on any country-card more 
+                    than once, your score is reset to zero. The idea is to get 
+                    the highest score possible!"
+                    img={memoryScreenshot}
+                    imgAlt='screenshot of memory card game'
+                    url='https://github.com/mattdimicelli/React_Memory_Game'
+                    />
+
+                    <Project title='No Framework Calculator'
+                    description={`A basic calculator app. It evaluates a single 
+                    pair of operands at at time, but allows the user to operate
+                    on the result of the previous equation. I decided to do all 
+                    of the "extra-credit" assignments for this project, so it 
+                    also handles floats, and it has a backspace button and keyboard
+                    support, and I used CSS to craft a replica of an antique
+                    Sharp calculator from the 1970s.
+                    
+                    P.S.: Try to find the "Easter Egg". Hint: enter an equation 
+                    that divides a number by something.....`}
+                    img={calculatorScreenshot}
+                    imgAlt='screenshot of calculator app'
+                    url='https://github.com/mattdimicelli/No_Framework_Calculator'
+                    />
+
+                    <Project title="React Shrimps R' US"
+                    description="This is a shopping cart app for shrimp lovers!
+                    It implements routes via react-router-dom to allow navigation
+                    between pages while always showing the navigation bar."
+                    img={shrimpsScreenshot}
+                    imgAlt="screenshot of Shrimps R'US app"
+                    url="https://github.com/mattdimicelli/React_Shrimps_R_US"
+                    />
+
+                    <Project title='No-Framework Todo List Using BaaS'
+                    description={`A ToDo app which allows the user to keep track
+                    of his or her "things to do", with advanced features such as
+                    optional details, due dates, and separate lists to better 
+                    organize the tasks. The app has responsive-design so that it
+                    can work on any device. It's actually a refactored version 
+                    of an older ToDo project of mine which utilized the Web 
+                    Storage API to persist the ToDo data through different 
+                    browser sessions. Wanting to enable access to saved ToDo 
+                    data from any client, as well as allow multiple users, I 
+                    implemented Google Firebase's Firestore database and 
+                    Authentication.`}
+                    img={todoScreenshot}
+                    imgAlt='screenshot of Todo app'
+                    url='https://github.com/mattdimicelli/No_Framework_Todo_List_Using_BaaS'
                     />
                 </ul>
             </section>
+            <section id="education" className="py-16 px-4 min-h-screen border-b-1 
+                border-slate-500 text-slate-800">
+                <h2 className="uppercase text-5xl font-bold">Education</h2>
+                <ul>
+                    <School name='Interamerican University of Puerto Rico'
+                    degree='Bachelor of Science in Nursing'
+                    years='2013 - 2015'
+                    details='Graduated Magna Cum Laude with 3.8 GPA' 
+                    />
+                    <School name='SUNY College at Geneseo'
+                    degree='Bachelor of Arts in Spanish'
+                    years='2007 - 2011'
+                    details='Pre-Medicine Concentration with 3.1 GPA' 
+                    />
+                </ul>
+            </section>
+            <section id="interests" className="py-16 px-4 min-h-screen border-b-1 
+                border-slate-500 text-slate-800">
+                <h2 className="uppercase text-5xl font-bold">Interests</h2>
+                <p className='mt-10'>Apart from being a web developer, my number one hobby is 
+                enjoying the outdoors, biking on the road and off the trail.
+                Indoors, I like to cook (and eat) cuisines from all over the 
+                world and watch television series and movies.  I spend most of
+                my free time with my beautiful wife, who I met in my previous residence
+                of Tijuana, Mexico.  We both love to travel and are very proud
+                of Latin American culture.  The Spanish language has also always
+                been a topic of interest for me that never gets old!</p>
+            </section>
+
 
             
             
