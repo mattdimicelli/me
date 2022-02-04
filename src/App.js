@@ -4,7 +4,7 @@ import ResponsiveSidebar from './components/ResponsiveSidebar';
 import MobileMenu from './components/MobileMenu';
 import Content from './components/Content';
 
-function App() {
+const App = () => {
   return (
     <div className="relative min-h-screen md:flex">
       <MobileMenu />

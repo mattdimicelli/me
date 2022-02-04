@@ -6,6 +6,8 @@ import { SiCsswizardry, SiVisualstudiocode, SiFirebase, SiTailwindcss,
 import { DiHeroku } from 'react-icons/di';
 import { GiCheckMark } from 'react-icons/gi';
 import { IconContext } from 'react-icons';
+import libraryScreenshot from '../images/library_screenshot.png';
+import Project from './Project';
 
 
 const Content = props => {
@@ -51,13 +53,13 @@ const Content = props => {
                 </article>
             </IconContext.Provider>
 
-            <section className="py-16 px-4 min-h-screen border-b-1 
+            <section className="skills py-16 px-4 min-h-screen border-b-1 
                 border-slate-500">
                 <IconContext.Provider value={{ size: '2.5rem', color: '#64748B'}}>
-                    <h2 className="skills uppercase text-5xl font-bold">Skills</h2>
-                    <h2 className="mt-12 uppercase text-slate-500 font-bold">
+                    <h2 className="uppercase text-5xl font-bold">Skills</h2>
+                    <h3 className="mt-12 uppercase text-slate-500 font-bold">
                         Languages & Tools
-                    </h2>
+                    </h3>
                     <ul className='gap-x-5 gap-y-8 flex flex-wrap mt-8'>
                         <li><TiHtml5 /></li>
                         <li><SiCsswizardry /></li>
@@ -87,6 +89,30 @@ const Content = props => {
                     </ul>
                 </IconContext.Provider>
             </section>
+            <section className="py-16 px-4 min-h-screen border-b-1 
+                border-slate-500">
+                <h2 className="uppercase text-5xl font-bold">Sample Projects</h2>
+                <ul>
+                    <Project title='No-Framework Book Library Using BaaS'
+                    description="A Library app which allows the user to keep track of
+                        his or her books. The app allows the user to manage his
+                        or her book collection with as few or as many details 
+                        as the user desires, such as the book's author, title,
+                        date of publication, etc. It has advanced features 
+                        such as the ability to display the books sorted by 
+                        different orders, as well as providing the user with 
+                        some basic stats about their collection. The app has 
+                        responsive-design so that it can work on any device. 
+                        Wanting to enable access to saved library data from 
+                        any client, as well as allow multiple users, I 
+                        implemented Google Firebase's Realtime (NoSQL) 
+                        database and Authentication."
+                    img={libraryScreenshot}
+                    imgAlt='screenshot of library app'
+                    />
+                </ul>
+            </section>
+
             
             
         </div>
