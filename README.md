@@ -11,7 +11,7 @@ however my implementation is 100% original.
 ### Screenshot
 
 <p align="center">
-  <img src="./src/images/screenshot_for_readme.png" alt="screenshot of personal website" width="50%" height="50%">
+  <img src="./src/images/screenshot_for_readme.png" alt="screenshot of personal website" width="30%" height="30%">
 </p>
 
 ### Links
