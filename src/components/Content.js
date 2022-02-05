@@ -32,7 +32,8 @@ const Content = props => {
     }
 
     return (
-        <div className="flex-1 font-sans lg:relative lg:left-64 lg:rest-of-screen">
+        <div className="flex-1 font-sans lg:relative lg:left-64 lg:rest-of-screen
+        lg:px-10">
             <IconContext.Provider value={{ size: '2rem', color: 'white'}}>
                 <article id="about" className="pt-28 pb-16 px-4 min-h-screen
                 border-b-1 border-slate-500">

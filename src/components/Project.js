@@ -18,7 +18,8 @@ const Project = ({title, description, img, imgAlt, urlRepo, urlLiveSite,
             className={sideOfScreenshot === 'left' ?  'order-first' : 'order-none'}
             >
                 <img 
-                className='mt-5 hidden lg:block lg:max-w-md lg:max-h-96'
+                className='mt-5 hidden lg:block lg:max-w-md lg:max-h-96 
+                hover:outline-1 hover:outline-slate-800 hover:outline'
                 src={img} alt={imgAlt} />
             </a>
         </li>
