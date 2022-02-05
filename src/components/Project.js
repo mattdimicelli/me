@@ -1,17 +1,26 @@
 import { FaExternalLinkSquareAlt } from 'react-icons/fa';
 
-const Project = ({title, description, img, imgAlt, url}) => {
+const Project = ({title, description, img, imgAlt, urlRepo, urlLiveSite,
+     sideOfScreenshot}) => {
     return (
-        <li className='flex flex-col text-slate-500 mt-10 lg:flex-row'>
+        <li className='flex flex-col text-slate-500 mt-10 lg:flex-row lg:gap-10'>
             <div>
             <h3 className="text-2xl uppercase font-bold">
-                <a className="text-slate-800 hover:underline hover:text-slate-900" href={url}><FaExternalLinkSquareAlt className="inline-block mr-2" />
+                <a className="text-slate-800 hover:underline hover:text-slate-900" 
+                href={urlRepo} target="_blank" rel="noreferrer">
+                    <FaExternalLinkSquareAlt className="inline-block mr-2" />
                     {title}
                 </a>
             </h3>
             <p className="mt-5">{description}</p>
             </div>
-            <img className="max-h-96 mt-5 hidden lg:block" src={img} alt={imgAlt} />
+            <a target="_blank" rel="noreferrer" href={urlLiveSite}
+            className={sideOfScreenshot === 'left' ?  'order-first' : 'order-none'}
+            >
+                <img 
+                className='mt-5 hidden lg:block lg:max-w-md lg:max-h-96'
+                src={img} alt={imgAlt} />
+            </a>
         </li>
     )
 }

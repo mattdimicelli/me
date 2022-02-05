@@ -63,10 +63,14 @@ const Content = props => {
                     </section>
                     <ul className='flex space-x-4 mt-12'>
                         <li className='bg-slate-700 rounded-full p-2 hover:bg-brownish'>
-                            <a href="https://github.com/mattdimicelli"><FaGithub /></a>
+                            <a target="_blank" rel="noreferrer" 
+                            href="https://github.com/mattdimicelli">
+                                <FaGithub />
+                            </a>
                         </li>
                         <li className='bg-slate-700 rounded-full p-2 hover:bg-brownish'>
-                            <a href="https://www.linkedin.com/in/matthewdimicelli/">
+                            <a target="_blank" rel="noreferrer" 
+                            href="https://www.linkedin.com/in/matthewdimicelli/">
                                 <FaLinkedinIn />
                             </a>
                         </li>
@@ -139,7 +143,9 @@ const Content = props => {
                         database and Authentication."
                     img={libraryScreenshot}
                     imgAlt='screenshot of library app'
-                    url='https://github.com/mattdimicelli/No_Framework_Book_Library_Using_BaaS'
+                    urlRepo='https://github.com/mattdimicelli/No_Framework_Book_Library_Using_BaaS'
+                    sideOfScreenshot='right'
+                    urlLiveSite='https://mylibrary-mrd.web.app/'
                     />
 
                     <Project title='No-Framework Battleship Via TDD'
@@ -149,7 +155,9 @@ const Content = props => {
                     former which was written with TDD."
                     img={battleshipScreenshot}
                     imgAlt='screenshot of battleship app'
-                    url='https://github.com/mattdimicelli/No_Framework_Battleship_Via_TDD'
+                    urlRepo='https://github.com/mattdimicelli/No_Framework_Battleship_Via_TDD'
+                    sideOfScreenshot='left'
+                    urlLiveSite='https://mattdimicelli.github.io/No_Framework_Battleship_Via_TDD/'
                     />
 
                     <Project title='React Memory Card Game'
@@ -161,7 +169,9 @@ const Content = props => {
                     the highest score possible!"
                     img={memoryScreenshot}
                     imgAlt='screenshot of memory card game'
-                    url='https://github.com/mattdimicelli/React_Memory_Game'
+                    urlRepo='https://github.com/mattdimicelli/React_Memory_Game'
+                    sideOfScreenshot='right'
+                    urlLiveSite='https://mattdimicelli.github.io/React_Memory_Game/'
                     />
 
                     <Project title='No Framework Calculator'
@@ -177,7 +187,9 @@ const Content = props => {
                     that divides a number by something.....`}
                     img={calculatorScreenshot}
                     imgAlt='screenshot of calculator app'
-                    url='https://github.com/mattdimicelli/No_Framework_Calculator'
+                    urlRepo='https://github.com/mattdimicelli/No_Framework_Calculator'
+                    sideOfScreenshot='left'
+                    urlLiveSite='https://mattdimicelli.github.io/No_Framework_Calculator/'
                     />
 
                     <Project title="React Shrimps R' US"
@@ -186,7 +198,9 @@ const Content = props => {
                     between pages while always showing the navigation bar."
                     img={shrimpsScreenshot}
                     imgAlt="screenshot of Shrimps R'US app"
-                    url="https://github.com/mattdimicelli/React_Shrimps_R_US"
+                    urlRepo="https://github.com/mattdimicelli/React_Shrimps_R_US"
+                    sideOfScreenshot='right'
+                    urlLiveSite='https://mattdimicelli.github.io/React_Shrimps_R_US/'
                     />
 
                     <Project title='No-Framework Todo List Using BaaS'
@@ -203,7 +217,9 @@ const Content = props => {
                     Authentication.`}
                     img={todoScreenshot}
                     imgAlt='screenshot of Todo app'
-                    url='https://github.com/mattdimicelli/No_Framework_Todo_List_Using_BaaS'
+                    urlRepo='https://github.com/mattdimicelli/No_Framework_Todo_List_Using_BaaS'
+                    sideOfScreenshot='left'
+                    urlLiveSite='https://todo-app-e225d.web.app/'
                     />
                 </ul>
             </section>
