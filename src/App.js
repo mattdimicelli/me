@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="relative min-h-screen">
       <MobileMenu showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
-      <ResponsiveSidebar showSidebar={showSidebar} />
+      <ResponsiveSidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <Content />
     </div>
   );

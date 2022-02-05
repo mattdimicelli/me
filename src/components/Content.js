@@ -35,8 +35,8 @@ const Content = props => {
         <div className="flex-1 font-sans lg:relative lg:left-64 lg:rest-of-screen
         lg:px-10">
             <IconContext.Provider value={{ size: '2rem', color: 'white'}}>
-                <article id="about" className="pt-28 pb-16 px-4 min-h-screen
-                border-b-1 border-slate-500">
+                <article id="about" className="flex flex-col justify-center pt-28
+                pb-16 px-4 border-b-1 border-slate-500 lg:min-h-screen">
                     <section className="uppercase">
                         <h1 className="text-5xl font-bold sm:text-7xl">
                             <span className="text-slate-800">Matthew </span>
@@ -79,8 +79,8 @@ const Content = props => {
                 </article>
             </IconContext.Provider>
 
-            <section id="skills" className="py-16 px-4 min-h-screen border-b-1 
-                border-slate-500">
+            <section id="skills" className="flex flex-col justify-center py-16 
+            px-4 border-b-1 border-slate-500 lg:min-h-screen">
                 <IconContext.Provider value={{ className: 'skill-icon' }}>
                     <h2 className="uppercase text-5xl font-bold text-slate-800">
                         Skills
@@ -124,8 +124,8 @@ const Content = props => {
                     </ul>
                 </IconContext.Provider>
             </section>
-            <section id="projects" className="py-16 px-4 min-h-screen border-b-1 
-                border-slate-500 text-slate-800">
+            <section id="projects" className="flex flex-col justify-center py-16 
+            px-4 border-b-1 border-slate-500 text-slate-800 lg:min-h-screen">
                 <h2 className="uppercase text-5xl font-bold">Sample Projects</h2>
                 <ul>
                     <Project title='No-Framework Book Library Using BaaS'
@@ -224,8 +224,8 @@ const Content = props => {
                     />
                 </ul>
             </section>
-            <section id="education" className="py-16 px-4 min-h-screen border-b-1 
-                border-slate-500 text-slate-800">
+            <section id="education" className="flex flex-col justify-center py-16 
+            px-4 border-b-1 border-slate-500 text-slate-800 lg:min-h-screen">
                 <h2 className="uppercase text-5xl font-bold">Education</h2>
                 <ul>
                     <School name='Interamerican University of Puerto Rico'
@@ -240,8 +240,8 @@ const Content = props => {
                     />
                 </ul>
             </section>
-            <section id="interests" className="py-16 px-4 min-h-screen border-b-1 
-                border-slate-500 text-slate-800">
+            <section id="interests" className="flex flex-col justify-center py-16 
+            px-4 border-b-1 border-slate-500 text-slate-800 lg:min-h-screen">
                 <h2 className="uppercase text-5xl font-bold">Interests</h2>
                 <p className='mt-10'>Apart from being a web developer, my number one hobby is 
                 enjoying the outdoors, biking on the road and off the trail.
@@ -252,14 +252,7 @@ const Content = props => {
                 of Latin American culture.  The Spanish language has also always
                 been a topic of interest for me that never gets old!</p>
             </section>
-
-
-            
-            
         </div>
-        
-        
-        
     )
 }
 

@@ -2,7 +2,7 @@ import profilePic from '../images/profile_pic_oval.webp';
 import { Link } from 'react-scroll';
 import { useState, useEffect } from 'react';
 
-const ResponsiveSidebar = ({showSidebar}) => {
+const ResponsiveSidebar = ({showSidebar, setShowSidebar}) => {
     let [activeAbout, setActiveAbout] = useState(false);
     let [activeSkills, setActiveSkills] = useState(false);
     let [activeProjects, setActiveProjects] = useState(false);
@@ -61,7 +61,10 @@ const ResponsiveSidebar = ({showSidebar}) => {
         projectObserver.observe(document.querySelector('#projects'));
     }, []);
 
-
+    function clickHandler() {
+        console.log('boop')
+        setShowSidebar(false);
+    }
     
     return (
         <div className={`bg-brownish text-salmonish flex flex-col 
@@ -74,25 +77,30 @@ const ResponsiveSidebar = ({showSidebar}) => {
             <nav>
                 <ul className="uppercase font-sans space-y-5 font-semibold 
                 lg:space-y-6 lg:text-center">
-                    <li className={`hover:text-brighter-salmon ${activeAbout ? 'text-white' : ''}`}>
+                    <li className={`hover:text-brighter-salmon ${activeAbout ? 'text-white' : ''}`}
+                    >
                         <Link to="about" smooth={true} duration={500} delay={350} 
-                        isDynamic={true}>About</Link>
+                        isDynamic={true} onClick={clickHandler}>About</Link>
                     </li>
-                    <li className={`hover:text-brighter-salmon ${activeSkills ? 'text-white' : ''}`}>
-                        <Link to="skills" smooth={true} duration={500} delay={350} 
+                    <li className={`hover:text-brighter-salmon ${activeSkills ? 'text-white' : ''}`}
+                    >
+                        <Link onClick={clickHandler} to="skills" smooth={true} duration={500} delay={350} 
                         isDynamic={true}>Skills</Link>
                     </li>
-                    <li className={`hover:text-brighter-salmon ${activeProjects ? 'text-white' : ''}`}>
+                    <li className={`hover:text-brighter-salmon ${activeProjects ? 'text-white' : ''}`}
+                    >
                         <Link to="projects" smooth={true} duration={500} delay={350} 
-                        isDynamic={true}>Projects</Link>
+                        isDynamic={true} onClick={clickHandler}>Projects</Link>
                     </li>
-                    <li className={`hover:text-brighter-salmon ${activeEducation ? 'text-white' : ''}`}>
+                    <li className={`hover:text-brighter-salmon ${activeEducation ? 'text-white' : ''}`}
+                    >
                         <Link to="education" smooth={true} duration={500} delay={350} 
-                        isDynamic={true}>Education</Link>
+                        isDynamic={true} onClick={clickHandler}>Education</Link>
                     </li>
-                    <li className={`hover:text-brighter-salmon ${activeInterests ? 'text-white' : ''}`}>
+                    <li className={`hover:text-brighter-salmon ${activeInterests ? 'text-white' : ''}`}
+                    >
                         <Link to="interests" smooth={true} duration={500} delay={350} 
-                        isDynamic={true}>Interests</Link>
+                        isDynamic={true} onClick={clickHandler}>Interests</Link>
                     </li>
                 </ul>
             </nav>
