@@ -11,10 +11,10 @@ const ResponsiveSidebar = ({showSidebar, setShowSidebar}) => {
 
     useEffect(() => {
         const ioOptions = {
-            threshold: 0.5,
+            threshold: 0.6,
         }
         const ioOptionsForProjectEl = {
-            threshold: 0.2,
+            threshold: [0.2, 0.4, 0.6, 0.8],
         }
         let educationActive;
         let projectsActive;
