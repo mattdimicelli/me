@@ -14,6 +14,7 @@ const MobileMenu = ({setShowSidebar, showSidebar}) => {
                 <button 
                 className="focus:border-dotted mr-4 px-2 border-1 rounded border-salmonish"
                 onClick={clickHandler}
+                aria-label="Open/Close Menu"
                 >
                     <GiHamburgerMenu />
                 </button>

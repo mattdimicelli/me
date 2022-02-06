@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brownish: '#bd5d38',
+        brownish: '#B95C37',
         salmonish: 'rgba(255,255,255,.5)',
         'brighter-salmon': 'rgba(255,255,255,.75)',
         browner: '#824027;'

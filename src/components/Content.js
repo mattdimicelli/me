@@ -65,12 +65,12 @@ const Content = props => {
                     <ul className='flex space-x-4 mt-12'>
                         <li className='bg-slate-700 rounded-full p-2 hover:bg-brownish'>
                             <a target="_blank" rel="noreferrer" 
-                            href="https://github.com/mattdimicelli">
+                            href="https://github.com/mattdimicelli" aria-label="Github">
                                 <FaGithub />
                             </a>
                         </li>
                         <li className='bg-slate-700 rounded-full p-2 hover:bg-brownish'>
-                            <a target="_blank" rel="noreferrer" 
+                            <a target="_blank" rel="noreferrer" aria-label="LinkedIn"
                             href="https://www.linkedin.com/in/matthewdimicelli/">
                                 <FaLinkedinIn />
                             </a>
