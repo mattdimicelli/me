@@ -129,7 +129,7 @@ const Content = props => {
             px-4 border-b-1 border-slate-500 text-slate-800 lg:min-h-screen">
                 <h2 className="uppercase text-5xl font-bold">Sample Projects</h2>
                 <ul>
-                    <Project title='No-Framework Book Library Using BaaS'
+                    <Project title='Book Library Using BaaS (No Framework)'
                     description="A Library app which allows the user to keep track of
                         his or her books. The app allows the user to manage his
                         or her book collection with as few or as many details 
@@ -150,7 +150,7 @@ const Content = props => {
                     urlLiveSite='https://mylibrary-mrd.web.app/'
                     />
 
-                    <Project title='No-Framework Battleship Via TDD'
+                    <Project title='Battleship Via TDD (No Framework)'
                     description="The classic Battleship game, built via Test 
                     Driven Development (TDD). Specifically, the game's logic was
                     written separate from the DOM controller, and it was the 
@@ -176,7 +176,7 @@ const Content = props => {
                     urlLiveSite='https://mattdimicelli.github.io/React_Memory_Game/'
                     />
 
-                    <Project title='NICE Calculator'
+                    <Project title='NICE Calculator (No Framework)'
                     description={`A basic calculator app. It evaluates a single 
                     pair of operands at at time, but allows the user to operate
                     on the result of the previous equation. I decided to do all 
@@ -205,7 +205,7 @@ const Content = props => {
                     urlLiveSite='https://mattdimicelli.github.io/React_Shrimps_R_US/'
                     />
 
-                    <Project title='No-Framework Todo List Using BaaS'
+                    <Project title='Todo List Using BaaS (No Framework)'
                     description={`A ToDo app which allows the user to keep track
                     of his or her "things to do", with advanced features such as
                     optional details, due dates, and separate lists to better 
