@@ -176,7 +176,7 @@ const Content = props => {
                     urlLiveSite='https://mattdimicelli.github.io/React_Memory_Game/'
                     />
 
-                    <Project title='No Framework Calculator'
+                    <Project title='NICE Calculator'
                     description={`A basic calculator app. It evaluates a single 
                     pair of operands at at time, but allows the user to operate
                     on the result of the previous equation. I decided to do all 
