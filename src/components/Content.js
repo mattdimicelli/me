@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedinIn, FaReact, FaGit, FaNode,
      FaLinux, FaNpm } from 'react-icons/fa';
 import { TiHtml5 } from 'react-icons/ti';
 import { SiCsswizardry, SiVisualstudiocode, SiFirebase, SiTailwindcss,
-    SiJavascript } from 'react-icons/si';
+    SiJavascript, SiWebpack } from 'react-icons/si';
 import { DiHeroku } from 'react-icons/di';
 import { GiCheckMark } from 'react-icons/gi';
 import { IconContext } from 'react-icons';
@@ -109,6 +109,7 @@ const Content = props => {
                             className="w-10 h-10"                              
                             />
                         </li>
+                        <li aria-label='Webpack'><SiWebpack /></li>
                     </ul>
                 </IconContext.Provider>
                 <h2 className="mt-8 uppercase text-slate-500 font-bold">
