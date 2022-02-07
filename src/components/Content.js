@@ -55,12 +55,13 @@ const Content = props => {
                         </address>
                     </section>
                     <section className="text-slate-500 mt-12">
-                        Matthew Di Micelli is a self-taught Frontend Web Developer with 
-                        a strong work ethic and a lifelong passion for learning and 
-                        technology.  He used the open-source Odin Project curriculum
-                        to guide his learning. Before initiating his web development 
-                        studies last year, he worked as a Registered Nurse and held advanced 
-                        certifications in his area.
+                        Matthew Di Micelli is a self-taught Frontend Web 
+                        Developer with a strong work ethic and a lifelong passion 
+                        for learning and technology.  He used the open-source 
+                        Odin Project curriculum to guide his learning from 
+                        February 2021 to the present.  Before initiating his 
+                        web development studies, he worked as a Registered Nurse 
+                        and held advanced certifications in his area.
                     </section>
                     <ul className='flex space-x-4 mt-12'>
                         <li className='bg-slate-700 rounded-full p-2 hover:bg-brownish'>
