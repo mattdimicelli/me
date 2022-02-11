@@ -1,6 +1,6 @@
 {
-  "name": "personal_website",
-  "homepage": "http://mattdimicelli.github.io/personal_website",
+  "name": "me",
+  "homepage": "http://mattdimicelli.github.io/me",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
