@@ -56,8 +56,12 @@ const Content = props => {
                         Matthew Di Micelli is a self-taught Frontend Web Developer with a strong 
                         work ethic and a lifelong passion for learning and technology.  He used the 
                         open-source Odin Project curriculum to guide his learning from February 2021
-                        to the present.  Before initiating his web development studies, he worked as
-                        a Registered Nurse and held advanced certifications in his area.
+                        to the present.  Although Matthew is now experienced in modern React, he made 
+                        sure to emphasize learning the basics, which include a strong foundation in 
+                        the three core web languages: JS, HTML, and CSS.  He is including older projects
+                        that were built without any frameworks in his portfolio to demonstrate that he can
+                        do so. Before initiating his web development studies, he worked as a Registered 
+                        Nurse and held advanced certifications in his area.
                     </section>
                     <ul className='flex space-x-4 mt-12'>
                         <li className='bg-slate-700 rounded-full p-2 hover:bg-brownish'>
