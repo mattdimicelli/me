@@ -21,58 +21,57 @@ const SkillItem = ({skill}) => {
     let icon;
     switch (skill) {
         case 'HTML':
-            icon = <TiHtml5 />;
+            icon = <TiHtml5 onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'CSS':
-            icon = <SiCsswizardry />;
+            icon = <SiCsswizardry onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'JS':
-            icon = <SiJavascript />;
+            icon = <SiJavascript onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'VS Code':
-            icon = <SiVisualstudiocode />;
+            icon = <SiVisualstudiocode onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'React':
-            icon = <FaReact />;
+            icon = <FaReact onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'Firebase':
-            icon = <SiFirebase />;
+            icon = <SiFirebase onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'Git':
-            icon = <FaGit />;
+            icon = <FaGit onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'Github':
-            icon = <FaGithub />;
+            icon = <FaGithub onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'Heroku':
-            icon = <DiHeroku />;
+            icon = <DiHeroku onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'Node':
-            icon = <FaNode />;
+            icon = <FaNode onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'Linux':
-            icon = <FaLinux />;
+            icon = <FaLinux onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'Tailwind CSS':
-            icon = <SiTailwindcss />;
+            icon = <SiTailwindcss onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'npm':
-            icon = <FaNpm />;
+            icon = <FaNpm onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'English':
-            icon = <RiEnglishInput />;
+            icon = <RiEnglishInput onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'Webpack':
-            icon = <SiWebpack />;
+            icon = <SiWebpack onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'Markdown':
-            icon = <FaMarkdown />;
+            icon = <FaMarkdown onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
     }
 
     return (
-        <li aria-label={skill} onMouseEnter={showCaption} onMouseLeave={hideCaption}
-         className='flex items-center justify-center flex-col w-28 h-20'>
+        <li aria-label={skill} className='flex items-center justify-center flex-col w-28 h-20'>
             {icon}
             <div className={captionClass}>{skill}</div>
         </li>
