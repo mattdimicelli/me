@@ -16,8 +16,8 @@ however my implementation is 100% original.
 
 ### Links
 
-- [Live site](https://mattdimicelli.github.io/personal_website/)
-- [Repo](https://github.com/mattdimicelli/personal_website)
+- [Live site](https://mattdimicelli.github.io/me/)
+- [Repo](https://github.com/mattdimicelli/me)
 
 ## My process
 
