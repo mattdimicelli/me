@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { FaGithub, FaLinkedinIn, FaReact, FaGit, FaNode, FaLinux, FaNpm } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaReact, FaGit, FaNode, FaLinux, FaNpm, FaMarkdown } 
+    from 'react-icons/fa';
 import { TiHtml5 } from 'react-icons/ti';
 import { SiCsswizardry, SiVisualstudiocode, SiFirebase, SiTailwindcss,
     SiJavascript, SiWebpack } from 'react-icons/si';
@@ -110,6 +111,7 @@ const Content = props => {
                             <img src={spanishIconSrc} alt="Spanish" className="w-10 h-10" />
                         </li>
                         <li aria-label='Webpack'><SiWebpack /></li>
+                        <li aria-label='Markdown'><FaMarkdown /></li>
                     </ul>
                 </IconContext.Provider>
                 <h2 className="mt-8 uppercase text-slate-500 font-bold">Workflow</h2>
