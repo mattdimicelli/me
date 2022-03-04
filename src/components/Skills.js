@@ -45,14 +45,12 @@ const Skills = () => {
                     <SkillItem skill='HTML' />
                     <SkillItem skill='CSS' />
                     <SkillItem skill='JS' />
-                    <SkillItem skill='VS Code' />
                     <SkillItem skill='React' />
-                    <SkillItem skill='Firebase' />
+                    <SkillItem skill='VS Code' />
                     <SkillItem skill='Git' />
                     <SkillItem skill='Github' />
                     <SkillItem skill='Heroku' />
-                    <SkillItem skill='Node.js' />
-                    <SkillItem skill='Linux' />
+                    <SkillItem skill='Firebase' />
                     <SkillItem skill='Tailwind CSS' />
                     <SkillItem skill='npm' />
                     <SkillItem skill='English' />
@@ -63,6 +61,7 @@ const Skills = () => {
                     </li>
                     <SkillItem skill='Webpack' />
                     <SkillItem skill='Markdown' />
+                    <SkillItem skill='Linux' />
                     <SkillItem skill='MongoDB' />
                     <li onMouseOver={onMouseOverMongoose} onMouseLeave={onMouseLeaveMongoose}
                         className='w-28 h-20 flex flex-col justify-center items-center'>
@@ -70,6 +69,7 @@ const Skills = () => {
                         <div className={mongooseCaptionClass}>Mongoose</div>
                     </li>
                     <SkillItem skill='Express' />
+                    <SkillItem skill='Node.js' />
                 </ul>
             </IconContext.Provider>
             <h2 className="mt-8 uppercase text-slate-500 font-bold">Workflow</h2>
