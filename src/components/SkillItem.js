@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FaGithub, FaReact, FaGit, FaNode, FaLinux, FaNpm, FaMarkdown } from 'react-icons/fa';
 import { TiHtml5 } from 'react-icons/ti';
 import { SiCsswizardry, SiVisualstudiocode, SiFirebase, SiTailwindcss,
-    SiJavascript, SiWebpack } from 'react-icons/si';
+    SiJavascript, SiWebpack, SiMongodb, SiExpress } from 'react-icons/si';
 import { DiHeroku } from 'react-icons/di';
 import { RiEnglishInput } from 'react-icons/ri';
 
@@ -47,7 +47,7 @@ const SkillItem = ({skill}) => {
         case 'Heroku':
             icon = <DiHeroku onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
-        case 'Node':
+        case 'Node.js':
             icon = <FaNode onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'Linux':
@@ -67,6 +67,12 @@ const SkillItem = ({skill}) => {
             break;
         case 'Markdown':
             icon = <FaMarkdown onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
+            break;
+        case 'MongoDB':
+            icon = <SiMongodb onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
+            break;
+        case 'Express':
+            icon = <SiExpress onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
     }
 

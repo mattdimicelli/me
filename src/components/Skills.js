@@ -2,12 +2,16 @@ import { IconContext } from 'react-icons';
 import SkillItem from './SkillItem';
 import spanishIconSlate from '../images/spanish-icon.png';
 import spanishIconBrownish from '../images/spanish-icon-brownish.png';
+import mongooseIconSlate from '../images/mongoose.png';
+import mongooseIconBrownish from '../images/mongoose_brown.png';
 import { useState } from 'react';
 import { GiCheckMark } from 'react-icons/gi';
 
 const Skills = () => {
     let [spanishIconSrc, setSpanishIconSrc] = useState(spanishIconSlate);
     let [spanishCaptionClass, setSpanishCaptionClass] = useState('invisible mt-2');
+    let [mongooseIconSrc, setMongooseIconSrc] = useState(mongooseIconSlate);
+    let [mongooseCaptionClass, setMongooseCaptionClass] = useState('invisible mt-2');
 
     function onMouseOverSpanish() {
         setSpanishIconSrc(spanishIconBrownish);
@@ -17,6 +21,16 @@ const Skills = () => {
     function onMouseLeaveSpanish() {
         setSpanishIconSrc(spanishIconSlate);
         setSpanishCaptionClass('invisible mt-2');
+    }
+
+    function onMouseOverMongoose() {
+        setMongooseIconSrc(mongooseIconBrownish);
+        setMongooseCaptionClass('text-brownish mt-2');
+    }
+
+    function onMouseLeaveMongoose() {
+        setMongooseIconSrc(mongooseIconSlate);
+        setMongooseCaptionClass('invisible mt-2');
     }
 
     return (
@@ -37,7 +51,7 @@ const Skills = () => {
                     <SkillItem skill='Git' />
                     <SkillItem skill='Github' />
                     <SkillItem skill='Heroku' />
-                    <SkillItem skill='Node' />
+                    <SkillItem skill='Node.js' />
                     <SkillItem skill='Linux' />
                     <SkillItem skill='Tailwind CSS' />
                     <SkillItem skill='npm' />
@@ -49,6 +63,13 @@ const Skills = () => {
                     </li>
                     <SkillItem skill='Webpack' />
                     <SkillItem skill='Markdown' />
+                    <SkillItem skill='MongoDB' />
+                    <li onMouseOver={onMouseOverMongoose} onMouseLeave={onMouseLeaveMongoose}
+                        className='w-28 h-20 flex flex-col justify-center items-center'>
+                        <img src={mongooseIconSrc} alt="Mongoose" className="w-10 h-10" />
+                        <div className={mongooseCaptionClass}>Mongoose</div>
+                    </li>
+                    <SkillItem skill='Express' />
                 </ul>
             </IconContext.Provider>
             <h2 className="mt-8 uppercase text-slate-500 font-bold">Workflow</h2>
