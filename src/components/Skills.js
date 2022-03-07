@@ -4,6 +4,8 @@ import spanishIconSlate from '../images/spanish-icon.png';
 import spanishIconBrownish from '../images/spanish-icon-brownish.png';
 import mongooseIconSlate from '../images/mongoose.png';
 import mongooseIconBrownish from '../images/mongoose_brown.png';
+import EJSIconSlate from '../images/ejs.png';
+import EJSIconBrownish from '../images/ejs-brown.png';
 import { useState } from 'react';
 import { GiCheckMark } from 'react-icons/gi';
 
@@ -12,25 +14,39 @@ const Skills = () => {
     let [spanishCaptionClass, setSpanishCaptionClass] = useState('invisible mt-2');
     let [mongooseIconSrc, setMongooseIconSrc] = useState(mongooseIconSlate);
     let [mongooseCaptionClass, setMongooseCaptionClass] = useState('invisible mt-2');
+    let [EJSIconSrc, setEJSIconSrc] = useState(EJSIconSlate);
+    let [EJSCaptionClass, setEJSCaptionClass] = useState('invisible mt-2');
 
-    function onMouseOverSpanish() {
-        setSpanishIconSrc(spanishIconBrownish);
-        setSpanishCaptionClass('text-brownish mt-2');
+    function onMouseOverIcon(icon) {
+        const visibleCaptionFormatted = 'text-brownish mt-2';
+        if (icon === 'Spanish') {
+            setSpanishIconSrc(spanishIconBrownish);
+            setSpanishCaptionClass(visibleCaptionFormatted);
+        }
+        else if (icon === 'Mongoose') {
+            setMongooseIconSrc(mongooseIconBrownish);
+            setMongooseCaptionClass(visibleCaptionFormatted);
+        }
+        else if (icon === 'EJS') {
+            setEJSIconSrc(EJSIconBrownish);
+            setEJSCaptionClass(visibleCaptionFormatted);
+        }
     }
 
-    function onMouseLeaveSpanish() {
-        setSpanishIconSrc(spanishIconSlate);
-        setSpanishCaptionClass('invisible mt-2');
-    }
-
-    function onMouseOverMongoose() {
-        setMongooseIconSrc(mongooseIconBrownish);
-        setMongooseCaptionClass('text-brownish mt-2');
-    }
-
-    function onMouseLeaveMongoose() {
-        setMongooseIconSrc(mongooseIconSlate);
-        setMongooseCaptionClass('invisible mt-2');
+    function onMouseLeaveIcon(icon) {
+        const invisibleCaption = 'invisible mt-2';
+        if (icon === 'Spanish') {
+            setSpanishIconSrc(spanishIconSlate);
+            setSpanishCaptionClass(invisibleCaption);
+        }
+        else if (icon === 'Mongoose') {
+            setMongooseIconSrc(mongooseIconSlate);
+            setMongooseCaptionClass(invisibleCaption);
+        }
+        else if (icon === 'EJS') {
+            setEJSIconSrc(EJSIconSlate);
+            setEJSCaptionClass(invisibleCaption);
+        }
     }
 
     return (
@@ -54,7 +70,8 @@ const Skills = () => {
                     <SkillItem skill='Tailwind CSS' />
                     <SkillItem skill='npm' />
                     <SkillItem skill='English' />
-                    <li onMouseOver={onMouseOverSpanish} onMouseLeave={onMouseLeaveSpanish}
+                    <li onMouseOver={() => onMouseOverIcon('Spanish')} 
+                        onMouseLeave={() => onMouseLeaveIcon('Spanish')}
                         className='w-28 h-20 flex flex-col justify-center items-center'>
                         <img src={spanishIconSrc} alt="Spanish" className="w-10 h-10" />
                         <div className={spanishCaptionClass}>Spanish</div>
@@ -63,13 +80,20 @@ const Skills = () => {
                     <SkillItem skill='Markdown' />
                     <SkillItem skill='Linux' />
                     <SkillItem skill='MongoDB' />
-                    <li onMouseOver={onMouseOverMongoose} onMouseLeave={onMouseLeaveMongoose}
+                    <li onMouseOver={() => onMouseOverIcon('Mongoose')} 
+                        onMouseLeave={() => onMouseLeaveIcon('Mongoose')}
                         className='w-28 h-20 flex flex-col justify-center items-center'>
                         <img src={mongooseIconSrc} alt="Mongoose" className="w-10 h-10" />
                         <div className={mongooseCaptionClass}>Mongoose</div>
                     </li>
                     <SkillItem skill='Express' />
                     <SkillItem skill='Node.js' />
+                    <li onMouseOver={() => onMouseOverIcon('EJS')} 
+                        onMouseLeave={() => onMouseLeaveIcon('EJS')}
+                        className='w-28 h-20 flex flex-col justify-center items-center'>
+                        <img src={EJSIconSrc} alt="EJS" className="w-10 h-10" />
+                        <div className={EJSCaptionClass}>EJS</div>
+                    </li>
                 </ul>
             </IconContext.Provider>
             <h2 className="mt-8 uppercase text-slate-500 font-bold">Workflow</h2>
