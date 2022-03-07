@@ -11,7 +11,7 @@ const Education = () => {
                 years='2021-2022'
                 details={`
                 A free, open-source coding curriculum that is taken entirely online at one’s own 
-                pace.  Designed for those who don’t need a “bootcamp drill instructor” to get 
+                pace.  Designed for those who don’t need a bootcamp (or a drill instructor!) to get 
                 motivated but still want a high quality education.  The content is meticulously 
                 curated by over 5000 volunteer contributors.  A core belief of the project is that 
                 you learn best by building.  Some of the technologies that are taught in the 
