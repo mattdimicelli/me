@@ -31,6 +31,7 @@ const About = () => {
                     I made sure to put a major emphasis on learning the basics first, which include 
                     a strong foundation in the three core web languages.  I continue to work every 
                     day to refine my skills.</p>  
+                    <br />
                     <p>Before studying web development, I was an experienced Registered Nurse 
                     holding several advanced certifications in my professional specialty.</p>
                 </section>
