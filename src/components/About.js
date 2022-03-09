@@ -15,11 +15,11 @@ const About = () => {
                     </h1>
                     <address className="not-italic leading-relaxed">
                         <span className="text-slate-500">
-                            40 Woodbury Way · Syosset, NY 11791-2718 · (516) 382-2699   
+                            40 Woodbury Way · Syosset, NY 11791-2718 · (516) 382-2699 ·&nbsp;
                         </span>
                         <a href="mailto:matthewdimicelli@gmail.com" 
                             className="text-brownish hover:text-browner hover:underline">
-                            &nbsp;· matthewdimicelli@gmail.com
+                            matthewdimicelli@gmail.com
                         </a>
                     </address>
                 </section>
