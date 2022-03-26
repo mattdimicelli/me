@@ -4,6 +4,7 @@ import memoryScreenshot from '../images/memory_screenshot.png';
 import calculatorScreenshot from '../images/calculator_screenshot.png';
 import characterHuntScreenshot from '../images/character_hunt_screenshot.png';
 import todoScreenshot from '../images/todo_screenshot.png';
+import supermarketScreenshot from '../images/supermarket_screenshot.png';
 
 import Project from './Project';
 const Projects = () => {
@@ -26,7 +27,23 @@ const Projects = () => {
                 urlLiveSite='https://mattdimicelli.github.io/Character_Hunt/'
                 />
 
-                <Project title='Todo List Using BaaS (No Framework)'
+                <Project title='SuperGroceries Inventory System (Full Stack - MongoDB, Express, 
+                    Node.js)'
+                description="An inventory system for a supermarket which allows CRUD operations for 
+                the supermarket's products and departments. This is a multi-page app built with 
+                MongoDB & Mongoose, Express, and Node.js.  EJS was chosen as the templating engine, 
+                and Tailwind CSS along with DaisyUI were used as a front-end framework. Heroku was 
+                chosen for the hosting of the server. In addition to the main application, I wrote a 
+                script to populate the database with some sample items and departments, which should
+                be apparent if you visit the application."
+                img={supermarketScreenshot}
+                imgAlt='supermarket inventory app'
+                urlRepo='https://github.com/mattdimicelli/Express_MongoDB_Supermarket_Inventory_2'
+                sideOfScreenshot='left'
+                urlLiveSite='https://supermarket-inventory.herokuapp.com/'
+                />
+
+                <Project title='Todo List Using BaaS (Full Stack - No Framework)'
                 description={`A ToDo app which allows the user to keep track of his or her 
                 "things to do", with advanced features such as optional details, due dates, and 
                 separate lists to better organize the tasks. The app has responsive-design so 
@@ -38,7 +55,7 @@ const Projects = () => {
                 img={todoScreenshot}
                 imgAlt='screenshot of Todo app'
                 urlRepo='https://github.com/mattdimicelli/No_Framework_Todo_List_Using_BaaS'
-                sideOfScreenshot='left'
+                sideOfScreenshot='right'
                 urlLiveSite='https://todo-app-e225d.web.app/'
                 />
 
@@ -49,7 +66,7 @@ const Projects = () => {
                 img={battleshipScreenshot}
                 imgAlt='screenshot of battleship app'
                 urlRepo='https://github.com/mattdimicelli/No_Framework_Battleship_Via_TDD'
-                sideOfScreenshot='right'
+                sideOfScreenshot='left'
                 urlLiveSite='https://mattdimicelli.github.io/No_Framework_Battleship_Via_TDD/'
                 />
 
@@ -62,7 +79,7 @@ const Projects = () => {
                 img={memoryScreenshot}
                 imgAlt='screenshot of memory card game'
                 urlRepo='https://github.com/mattdimicelli/React_Memory_Game'
-                sideOfScreenshot='left'
+                sideOfScreenshot='right'
                 urlLiveSite='https://mattdimicelli.github.io/React_Memory_Game/'
                 />
 
@@ -78,27 +95,11 @@ const Projects = () => {
                 img={calculatorScreenshot}
                 imgAlt='screenshot of calculator app'
                 urlRepo='https://github.com/mattdimicelli/No_Framework_Calculator'
-                sideOfScreenshot='right'
+                sideOfScreenshot='left'
                 urlLiveSite='https://mattdimicelli.github.io/No_Framework_Calculator/'
                 />
 
-                <Project title='Book Library Using BaaS (No Framework)'
-                description="A Library app which allows the user to keep track of his or her
-                books. The app allows the user to manage his or her book collection with as 
-                few or as many details as the user desires, such as the book's author, 
-                title, date of publication, etc. It has advanced features such as the 
-                ability to display the books sorted by different orders, as well as 
-                providing the user with some basic stats about their collection. The app has 
-                responsive-design so that it can work on any device. Wanting to enable 
-                access to saved library data from any client, as well as allow multiple 
-                users, I implemented Google Firebase's Realtime (NoSQL) database and 
-                Authentication."
-                img={libraryScreenshot}
-                imgAlt='screenshot of library app'
-                urlRepo='https://github.com/mattdimicelli/No_Framework_Book_Library_Using_BaaS'
-                sideOfScreenshot='left'
-                urlLiveSite='https://mylibrary-mrd.web.app/'
-                />
+                
 
                 
             </ul>
