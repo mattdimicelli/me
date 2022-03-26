@@ -11,11 +11,10 @@ const Education = () => {
                 years='2021-2022'
                 details={`
                 A free, open-source coding curriculum that is taken entirely online at one’s own 
-                pace.  Designed for those who don’t need a bootcamp (or a drill instructor!) to get 
-                motivated but still want a high quality education.  The content is meticulously 
-                curated by over 5000 volunteer contributors.  A core belief of the project is that 
-                you learn best by building.  Some of the technologies that are taught in the 
-                curriculum can be seen in the above “Skills” section`}
+                pace and designed for self-starters who don’t need a bootcamp to get motivated. The 
+                content is meticulously curated by over 5,000 volunteer contributors. A core belief 
+                of the project is that you learn best by building. Some of the technologies in the 
+                curriculum can be seen in the above “Skills” section.`}
                 />
                 <School name='Interamerican University of Puerto Rico'
                 degree='Bachelor of Science in Nursing'
