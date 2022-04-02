@@ -10,11 +10,12 @@ const Education = () => {
                 degree='Full Stack Web Development'
                 years='2021-2022'
                 details={`
-                A free, open-source coding curriculum that is taken entirely online at one’s own 
-                pace and designed for self-starters who don’t need a bootcamp to get motivated. The 
-                content is meticulously curated by over 5,000 volunteer contributors. A core belief 
-                of the project is that you learn best by building. Some of the technologies in the 
-                curriculum can be seen in the above “Skills” section.`}
+                An open-source coding curriculum that provides structured learning for self-starters
+                who don’t need a boot camp to get motivated.  The curriculum guides you through 
+                HTML, CSS, Javascript, Git, NodeJS, Express, MongoDB, and much more.  A core belief 
+                is that you learn best by building many projects.  The applications which can be 
+                seen in my portfolio and Github repository are my implementations of these 
+                projects.`}
                 />
                 <School name='Interamerican University of Puerto Rico'
                 degree='Bachelor of Science in Nursing'

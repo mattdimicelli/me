@@ -24,16 +24,13 @@ const About = () => {
                     </address>
                 </section>
                 <section className="text-slate-500 mt-12">
-                    <p>I’m a self-taught <strong>Full Stack Web Developer</strong>!  I coupled the 
-                    open-source Odin Project web development curriculum with techniques that I 
-                    previously used to master the Spanish language when learning to code from 
-                    February 2021 to the present.  Although I’m now experienced with the MERN stack, 
-                    I made sure to put a major emphasis on learning the basics first, which include 
-                    a strong foundation in the three core web languages.  I continue to work every 
-                    day to refine my skills.</p>  
-                    <br />
-                    <p>Before studying web development, I was an experienced Registered Nurse 
-                    holding several advanced certifications in my professional specialty.</p>
+                    <p>I’m a <strong>Full Stack Web Developer</strong>, previously a Registered 
+                    Nurse. Just as I learned to speak fluent Spanish as an adult, I motivated myself
+                    through the hard work of learning to program via a structured, renowned, and 
+                    purposeful curriculum called the Odin Project, similar to a bootcamp. Taking 
+                    this initiative was an extension of my lifelong love of tech. I am skilled in 
+                    JS, HTML, and CSS, as well as the MERN (MongoDB, Express.js, React, NodeJS) 
+                    stack. I am now seeking professional opportunities in coding.</p>  
                 </section>
                 <ul className='flex space-x-4 mt-12'>
                     <li className='bg-slate-700 rounded-full p-2 hover:bg-brownish'>
