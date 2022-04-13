@@ -86,6 +86,7 @@ const Skills = () => {
                         <img src={mongooseIconSrc} alt="Mongoose" className="w-10 h-10" />
                         <div className={mongooseCaptionClass}>Mongoose</div>
                     </li>
+                    <SkillItem skill='PostgreSQL' />
                     <SkillItem skill='Express' />
                     <SkillItem skill='Node.js' />
                     <li onMouseOver={() => onMouseOverIcon('EJS')} 
