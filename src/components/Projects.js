@@ -20,7 +20,9 @@ const Projects = () => {
                 books, and pop-culture . The player can choose from three stunning illustrations
                 (which I refer to as "maps"): Ultimate Space Battle, Universe 113, and The Loc 
                 Nar. All which were drawn by Egor Klyuchnyk, an illustrator and concept artist 
-                from Kyiv, Ukraine.`}
+                from Kyiv, Ukraine. Note: although this game is built with responsive design,
+                given the nature of the game it is MUCH more pleasant to play on a device with
+                a large screen!`}
                 img={characterHuntScreenshot}
                 imgAlt="screenshot of Character Hunt app"
                 urlRepo="https://github.com/mattdimicelli/Character_Hunt"
