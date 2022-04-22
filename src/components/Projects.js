@@ -5,6 +5,7 @@ import calculatorScreenshot from '../images/calculator_screenshot.png';
 import characterHuntScreenshot from '../images/character_hunt_screenshot.png';
 import todoScreenshot from '../images/todo_screenshot.png';
 import supermarketScreenshot from '../images/supermarket_screenshot.png';
+import superPowerClubScreenshot from '../images/super_power_club.png';
 
 import Project from './Project';
 const Projects = () => {
@@ -27,6 +28,20 @@ const Projects = () => {
                 urlLiveSite='https://mattdimicelli.github.io/Character_Hunt/'
                 />
 
+                <Project 
+                title='Super Power Club! (Full Stack - MongoDB, Express, Node.js)'
+                description= {`This is a Nintendo Power themed message board, built as a multi-page 
+                Express (Node JS) app. Authentication and authorization were implemented via the 
+                Passport Local Strategy to create multiple levels of access ("basic", admin, and 
+                Super Power Club member) and restrict and enable different features to them 
+                respectively. Like always, this app was built mobile-first with responsive design.`}
+                img={superPowerClubScreenshot}
+                imgAlt='Super Power Club app'
+                urlRepo='https://github.com/mattdimicelli/Members_Only'
+                sideOfScreenshot='left'
+                urlLiveSite='#'
+                />
+
                 <Project title='SuperGroceries Inventory System (Full Stack - MongoDB, Express, 
                     Node.js)'
                 description="An inventory system for a supermarket which allows CRUD operations for 
@@ -39,7 +54,7 @@ const Projects = () => {
                 img={supermarketScreenshot}
                 imgAlt='supermarket inventory app'
                 urlRepo='https://github.com/mattdimicelli/Express_MongoDB_Supermarket_Inventory_2'
-                sideOfScreenshot='left'
+                sideOfScreenshot='right'
                 urlLiveSite='https://supermarket-inventory.herokuapp.com/'
                 />
 
@@ -55,7 +70,7 @@ const Projects = () => {
                 img={todoScreenshot}
                 imgAlt='screenshot of Todo app'
                 urlRepo='https://github.com/mattdimicelli/No_Framework_Todo_List_Using_BaaS'
-                sideOfScreenshot='right'
+                sideOfScreenshot='left'
                 urlLiveSite='https://todo-app-e225d.web.app/'
                 />
 
@@ -66,7 +81,7 @@ const Projects = () => {
                 img={battleshipScreenshot}
                 imgAlt='screenshot of battleship app'
                 urlRepo='https://github.com/mattdimicelli/No_Framework_Battleship_Via_TDD'
-                sideOfScreenshot='left'
+                sideOfScreenshot='right'
                 urlLiveSite='https://mattdimicelli.github.io/No_Framework_Battleship_Via_TDD/'
                 />
 
@@ -79,7 +94,7 @@ const Projects = () => {
                 img={memoryScreenshot}
                 imgAlt='screenshot of memory card game'
                 urlRepo='https://github.com/mattdimicelli/React_Memory_Game'
-                sideOfScreenshot='right'
+                sideOfScreenshot='left'
                 urlLiveSite='https://mattdimicelli.github.io/React_Memory_Game/'
                 />
 
@@ -95,7 +110,7 @@ const Projects = () => {
                 img={calculatorScreenshot}
                 imgAlt='screenshot of calculator app'
                 urlRepo='https://github.com/mattdimicelli/No_Framework_Calculator'
-                sideOfScreenshot='left'
+                sideOfScreenshot='right'
                 urlLiveSite='https://mattdimicelli.github.io/No_Framework_Calculator/'
                 />
 
