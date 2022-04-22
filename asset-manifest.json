@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/me/static/css/main.0ee3c810.css",
-    "main.js": "/me/static/js/main.c64c3626.js",
+    "main.js": "/me/static/js/main.8ee6b4c1.js",
     "static/js/787.ee95881d.chunk.js": "/me/static/js/787.ee95881d.chunk.js",
     "static/media/calculator_screenshot.png": "/me/static/media/calculator_screenshot.03f692c729d893d83785.png",
     "static/media/library_screenshot.png": "/me/static/media/library_screenshot.592796424941afa1e0e6.png",
-    "static/media/memory_screenshot.png": "/me/static/media/memory_screenshot.c547c9b8396ee8946958.png",
+    "static/media/memory_screenshot.png": "/me/static/media/memory_screenshot.09be84d1b3d5b3e8a66d.png",
     "static/media/character_hunt_screenshot.png": "/me/static/media/character_hunt_screenshot.615e8d7d9872ae82415f.png",
     "static/media/super_power_club.png": "/me/static/media/super_power_club.134fc75c361d713ae1dc.png",
     "static/media/supermarket_screenshot.png": "/me/static/media/supermarket_screenshot.4913c6aaee3eaa9d62e0.png",
@@ -17,11 +17,11 @@
     "static/media/logo.svg": "/me/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/me/index.html",
     "main.0ee3c810.css.map": "/me/static/css/main.0ee3c810.css.map",
-    "main.c64c3626.js.map": "/me/static/js/main.c64c3626.js.map",
+    "main.8ee6b4c1.js.map": "/me/static/js/main.8ee6b4c1.js.map",
     "787.ee95881d.chunk.js.map": "/me/static/js/787.ee95881d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0ee3c810.css",
-    "static/js/main.c64c3626.js"
+    "static/js/main.8ee6b4c1.js"
   ]
 }
