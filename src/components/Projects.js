@@ -39,7 +39,7 @@ const Projects = () => {
                 imgAlt='Super Power Club app'
                 urlRepo='https://github.com/mattdimicelli/Members_Only'
                 sideOfScreenshot='left'
-                urlLiveSite='#'
+                urlLiveSite='https://super-power-club.glitch.me'
                 />
 
                 <Project title='SuperGroceries Inventory System (Full Stack - MongoDB, Express, 
