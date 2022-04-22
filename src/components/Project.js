@@ -1,4 +1,5 @@
-import { FaExternalLinkSquareAlt } from 'react-icons/fa';
+import { FaExternalLinkSquareAlt, FaArrowUp } from 'react-icons/fa';
+
 
 const Project = ({title, description, img, imgAlt, urlRepo, urlLiveSite, sideOfScreenshot}) => {
     return (
@@ -16,10 +17,14 @@ const Project = ({title, description, img, imgAlt, urlRepo, urlLiveSite, sideOfS
             
             <a target="_blank" rel="noreferrer" href={urlLiveSite}
             className={sideOfScreenshot === 'left' ?  'order-first' : 'order-none'}>
-                <img 
-                className='mt-5 hidden lg:block lg:max-w-md lg:max-h-96 
-                hover:outline-1 hover:outline-slate-800 hover:outline'
-                src={img} alt={imgAlt} />
+                <figure className='flex flex-col items-center'>
+                    <img 
+                    className='mt-5 hidden lg:block lg:max-w-md lg:max-h-96 
+                    hover:outline-1 hover:outline-slate-800 hover:outline mb-5'
+                    src={img} alt={imgAlt} />
+                    <FaArrowUp />
+                    <figcaption>Live Site</figcaption>
+                </figure> 
             </a>
         </li>
     )
