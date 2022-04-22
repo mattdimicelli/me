@@ -114,6 +114,10 @@ const Projects = () => {
                 urlLiveSite='https://mattdimicelli.github.io/No_Framework_Calculator/'
                 />
 
+                <p>* See the rest of my projects on&nbsp; 
+                    <a className="underline" href="https://github.com/mattdimicelli">Github!</a>
+                </p>
+
                 
 
                 
