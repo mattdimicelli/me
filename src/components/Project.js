@@ -17,7 +17,7 @@ const Project = ({title, description, img, imgAlt, urlRepo, urlLiveSite, sideOfS
             
             <a target="_blank" rel="noreferrer" href={urlLiveSite}
             className={sideOfScreenshot === 'left' ?  'order-first' : 'order-none'}>
-                <figure className='flex flex-col items-center'>
+                <figure className='hidden lg:flex lg:flex-col lg:items-center'>
                     <img 
                     className='mt-5 hidden lg:block lg:max-w-md lg:max-h-96 
                     hover:outline-1 hover:outline-slate-800 hover:outline mb-5'
