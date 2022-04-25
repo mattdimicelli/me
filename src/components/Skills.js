@@ -104,10 +104,10 @@ const Skills = () => {
                         <GiCheckMark className="inline-block mr-2" />
                         Mobile-First, Responsive Design
                     </li>
-                    <li>
+                    {/* <li>
                         <GiCheckMark className="inline-block mr-2" />
                         Testing (Static, Unit, Integration, e2e, & TDD)
-                    </li>
+                    </li> */}
                 </ul>
             </IconContext.Provider>
         </section>
