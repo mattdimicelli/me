@@ -6,10 +6,10 @@ const Interests = () => {
             <p className='mt-10'>Apart from being a web developer, my number one hobby is 
             enjoying the outdoors, biking on the road and off the trail.  Indoors, I like to 
             cook (and eat) cuisines from all over the world and watch television series and 
-            movies.  I spend most of my free time with my beautiful wife, Meri, who I met in my 
-            previous residence of Tijuana, Mexico.  We both love to travel and are very proud
-            of Latin American culture.  The Spanish language has also always been a topic of 
-            interest for me that never gets old!</p>
+            movies.  I spend most of my free time with my beautiful wife, Meri, who I met in 
+            Tijuana, Mexico.  We both love to travel and are very proud of Latin American culture.  
+            The Spanish language has also always been a topic of interest for me that never gets 
+            old!</p>
         </section>
     )
 }
