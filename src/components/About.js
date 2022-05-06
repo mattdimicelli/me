@@ -25,12 +25,11 @@ const About = () => {
                 </section>
                 <section className="text-slate-500 mt-12">
                     <p>I’m a <strong>Full Stack Web Developer</strong>, previously a Registered 
-                    Nurse. Just as I learned to speak fluent Spanish as an adult, I motivated myself
-                    through the hard work of learning to program via a structured, renowned, and 
-                    purposeful curriculum called the Odin Project, similar to a bootcamp. Taking 
-                    this initiative was an extension of my lifelong love of tech. I am skilled in 
-                    JS, HTML, and CSS, as well as the MERN (MongoDB, Express.js, React, NodeJS) 
-                    stack. I am now seeking professional opportunities in coding.</p>  
+                    Nurse. I learned to program via a structured  curriculum called the Odin 
+                    Project, similar to a bootcamp. Taking this initiative was an extension of my 
+                    lifelong love of tech. I am skilled in JS, HTML, CSS, the MERN stack (MongoDB, 
+                    Express.js, React, NodeJS), and much more. I am seeking professional 
+                    opportunities in coding.</p>  
                 </section>
                 <ul className='flex space-x-4 mt-12'>
                     <li className='bg-slate-700 rounded-full p-2 hover:bg-brownish'>
