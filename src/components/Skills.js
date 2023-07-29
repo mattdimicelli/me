@@ -61,11 +61,11 @@ const Skills = () => {
                     <SkillItem skill='HTML' />
                     <SkillItem skill='CSS' />
                     <SkillItem skill='JS' />
+                    <SkillItem skill='Java' />
                     <SkillItem skill='React' />
-                    <SkillItem skill='VS Code' />
                     <SkillItem skill='Git' />
                     <SkillItem skill='Github' />
-                    <SkillItem skill='Heroku' />
+                    <SkillItem skill='SQL' />
                     <SkillItem skill='Firebase' />
                     <SkillItem skill='Tailwind CSS' />
                     <SkillItem skill='npm' />
@@ -86,15 +86,14 @@ const Skills = () => {
                         <img src={mongooseIconSrc} alt="Mongoose" className="w-10 h-10" />
                         <div className={mongooseCaptionClass}>Mongoose</div>
                     </li>
-                    <SkillItem skill='PostgreSQL' />
                     <SkillItem skill='Express' />
                     <SkillItem skill='Node.js' />
-                    <li onMouseOver={() => onMouseOverIcon('EJS')} 
-                        onMouseLeave={() => onMouseLeaveIcon('EJS')}
-                        className='w-28 h-20 flex flex-col justify-center items-center'>
-                        <img src={EJSIconSrc} alt="EJS" className="w-10 h-10" />
-                        <div className={EJSCaptionClass}>EJS</div>
-                    </li>
+                    {/*<li onMouseOver={() => onMouseOverIcon('EJS')} */}
+                    {/*    onMouseLeave={() => onMouseLeaveIcon('EJS')}*/}
+                    {/*    className='w-28 h-20 flex flex-col justify-center items-center'>*/}
+                    {/*    <img src={EJSIconSrc} alt="EJS" className="w-10 h-10" />*/}
+                    {/*    <div className={EJSCaptionClass}>EJS</div>*/}
+                    {/*</li>*/}
                 </ul>
             </IconContext.Provider>
             <h2 className="mt-8 uppercase text-slate-500 font-bold">Workflow</h2>

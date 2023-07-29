@@ -2,10 +2,12 @@
 import { useState } from 'react';
 import { FaGithub, FaReact, FaGit, FaNode, FaLinux, FaNpm, FaMarkdown } from 'react-icons/fa';
 import { TiHtml5 } from 'react-icons/ti';
-import { SiCsswizardry, SiVisualstudiocode, SiFirebase, SiTailwindcss,
-    SiJavascript, SiWebpack, SiMongodb, SiExpress, SiPostgresql } from 'react-icons/si';
+import { SiCsswizardry, SiFirebase, SiTailwindcss,
+    SiJavascript, SiWebpack, SiMongodb, SiExpress } from 'react-icons/si';
 import { DiHeroku } from 'react-icons/di';
 import { RiEnglishInput } from 'react-icons/ri';
+import { TbSql } from 'react-icons/tb';
+import { LiaJava } from 'react-icons/lia';
 
 const SkillItem = ({skill}) => {
 
@@ -29,8 +31,8 @@ const SkillItem = ({skill}) => {
         case 'JS':
             icon = <SiJavascript onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
-        case 'VS Code':
-            icon = <SiVisualstudiocode onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
+        case 'Java':
+            icon = <LiaJava onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'React':
             icon = <FaReact onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
@@ -74,8 +76,8 @@ const SkillItem = ({skill}) => {
         case 'Express':
             icon = <SiExpress onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
-        case 'PostgreSQL':
-            icon = <SiPostgresql onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
+        case 'SQL':
+            icon = <TbSql onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
     }
 

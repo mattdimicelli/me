@@ -15,7 +15,7 @@ const About = () => {
                     </h1>
                     <address className="not-italic leading-relaxed">
                         <span className="text-slate-500">
-                            40 Woodbury Way · Syosset, NY 11791-2718 · (516) 382-2699 ·&nbsp;
+                             Corona, NY · (516) 382-2699 ·&nbsp;
                         </span>
                         <a href="mailto:matthewdimicelli@gmail.com" 
                             className="text-brownish hover:text-browner hover:underline">
@@ -24,12 +24,9 @@ const About = () => {
                     </address>
                 </section>
                 <section className="text-slate-500 mt-12">
-                    <p>I’m a <strong>Full Stack Web Developer</strong>, previously a Registered 
-                    Nurse. I learned to program via a structured  curriculum called the Odin 
-                    Project, similar to a bootcamp. Taking this initiative was an extension of my 
-                    lifelong love of tech. I am skilled in JS, HTML, CSS, the MERN stack (MongoDB, 
-                    Express.js, React, NodeJS), and much more. I am seeking professional 
-                    opportunities in coding.</p>  
+                    <p>I’m a <strong>Full Stack Web Developer</strong>, previously a Registered Nurse. I am skilled in
+                        many software development technologies and I have not stopped learning! I am seeking a full
+                    time position as a software developer.</p>
                 </section>
                 <ul className='flex space-x-4 mt-12'>
                     <li className='bg-slate-700 rounded-full p-2 hover:bg-brownish'>
