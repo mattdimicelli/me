@@ -1,4 +1,4 @@
-import profilePic from '../images/my_face_circle.png';
+import profilePic from '../images/matt_face.png';
 import { Link } from 'react-scroll';
 import { useState, useEffect } from 'react';
 
