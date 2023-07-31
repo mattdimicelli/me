@@ -41,7 +41,7 @@ const Projects = () => {
                 imgAlt='Super Power Club app'
                 urlRepo='https://github.com/mattdimicelli/Members_Only'
                 sideOfScreenshot='left'
-                urlLiveSite='https://members-only-fullstack.herokuapp.com'
+                urlLiveSite='https://members-only-backend.onrender.com/'
                 />
 
                 <Project title='SuperGroceries Inventory System (Full Stack - MongoDB, Express, 
