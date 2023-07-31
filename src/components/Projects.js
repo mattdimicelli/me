@@ -57,7 +57,7 @@ const Projects = () => {
                 imgAlt='supermarket inventory app'
                 urlRepo='https://github.com/mattdimicelli/Express_MongoDB_Supermarket_Inventory_2'
                 sideOfScreenshot='right'
-                urlLiveSite='https://supermarket-inventory.herokuapp.com/'
+                urlLiveSite='https://supergroceries-inventory.onrender.com/'
                 />
 
                 <Project title='Todo List Using BaaS (Full Stack - No Framework)'
