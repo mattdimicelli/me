@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FaGithub, FaReact, FaGit, FaNode, FaLinux, FaNpm, FaMarkdown } from 'react-icons/fa';
 import { TiHtml5 } from 'react-icons/ti';
 import { SiCsswizardry, SiFirebase, SiTailwindcss,
-    SiJavascript, SiWebpack, SiMongodb, SiExpress } from 'react-icons/si';
+    SiJavascript, SiWebpack, SiMongodb, SiExpress, SiTypescript } from 'react-icons/si';
 import { DiHeroku } from 'react-icons/di';
 import { RiEnglishInput } from 'react-icons/ri';
 import { TbSql } from 'react-icons/tb';
@@ -30,6 +30,9 @@ const SkillItem = ({skill}) => {
             break;
         case 'JS':
             icon = <SiJavascript onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
+            break;
+        case 'Typescript':
+            icon = <SiTypescript onMouseEnter={showCaption} onMouseLeave={hideCaption} />;
             break;
         case 'Java':
             icon = <LiaJava onMouseEnter={showCaption} onMouseLeave={hideCaption} />;

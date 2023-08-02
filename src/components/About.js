@@ -24,8 +24,8 @@ const About = () => {
                     </address>
                 </section>
                 <section className="text-slate-500 mt-12">
-                    <p>I’m a <strong>Full Stack Web Developer</strong>, previously a Registered Nurse. I am skilled in
-                        many software development technologies and I have not stopped learning! I am seeking a full
+                    <p>I’m a <strong>Full Stack Web Developer</strong>. Skilled in
+                        many software development technologies and I have not stopped learning! Seeking a full
                     time position as a software developer.</p>
                 </section>
                 <ul className='flex space-x-4 mt-12'>

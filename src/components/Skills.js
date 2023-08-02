@@ -61,6 +61,7 @@ const Skills = () => {
                     <SkillItem skill='HTML' />
                     <SkillItem skill='CSS' />
                     <SkillItem skill='JS' />
+                    <SkillItem skill='Typescript' />
                     <SkillItem skill='Java' />
                     <SkillItem skill='React' />
                     <SkillItem skill='Git' />
